@@ -1,0 +1,73 @@
+# Python
+# -------------------------------------------------------------------
+
+# Virtual Environments
+# This is the most important one for us right now. It ignores the 'venv'
+# directory we just created, which can be large and is specific to your machine.
+venv/
+.venv/
+env/
+.env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Instance folder (for Flask)
+# Often used for local database files or instance-specific configs.
+instance/
+
+# Environment variables
+# Never commit your environment variables, which may contain secrets.
+.env
+
+# IDE / Editor specific files
+# -------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific files
+# -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# Testing
+# -------------------------------------------------------------------
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Logs
+# -------------------------------------------------------------------
+*.log
+
