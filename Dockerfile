@@ -14,8 +14,5 @@ COPY . .
 # Expose the TCP port Gunicorn will bind to
 EXPOSE 8000
 
-# Expose Gunicorn socket path within container
-# ENV GUNICORN_CMD_ARGS="--bind 0.0.0.0:8000 --workers 3"
-
-# Run Gunicorn with your wsgi.py
-CMD ["gunicorn", "wsgi:app"]
+# Run Gunicorn with your wsgi.py, binding to all interfaces
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "wsgi:app"]
